@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f1f5f8;
+    font-family: "Open Sans", sans-serif;
+}
+/* start section */
+main .title h2{
+    color: #102a42;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+main .title h2::after{
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 4px;
+    background-color: #49a6e9;
+    bottom: 3px;
+    left: 47%;
+}
+main article .reviews{
+    width: 90%;
+    max-width: 580px;
+    margin: 40px auto 20px;
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main article .reviews .img-box{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+main article .reviews .img-box .img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 100;
+}
+main article .reviews .img-box::before{
+    content: "\f10e";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background-color: #49a6e9;
+    font-family: "font awesome 6 free";
+    font-weight: 900;
+    color: #fff;
+}
+main article .reviews .img-box::after{
+    content: "";
+    position: absolute;
+    background-color: #49a6e9;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: translate(-140px, -5px);
+    z-index: -1;
+}
+main article .content {
+    text-align: center;
+}
+main article .content h2{
+    color: #102a42;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+main article .content h3{
+    color: #49a6e9;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+main article .content p{
+    color: #7f899e;
+    font-size: 17px;
+    margin-top: 10px;
+}
+main article .icon{
+    text-align: center;
+}
+main article .icon button{
+    color: #8bcbf9;
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+}
+main article .icon .left{
+    margin-right: 15px;
+}
+main article .surprise{
+    color: #49b8f2;
+    background-color:#ebf7ff ;
+    border: 2px solid #2e6a95;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    transition:all 0.2s;
+    margin-top: 10px;
+}
+main article .surprise:hover{
+    background-color: #49a6e9;
+    color: #102a42;
+    border: 2px solid #49a6e9;
+}
+/* end sectio */
